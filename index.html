@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Congolese Cuisine</title>
+<title>Congolese Food Project</title>
 
+<!-- INTERNAL CSS -->
 <style>
 body {
     font-family: Arial, sans-serif;
-    background-image: url('https://i.pinimg.com/1200x/a9/28/94/a928948a59c8a40eb797b56c92e12432.jpg');
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(to right, #1b5e20, #4caf50);
     color: white;
     margin: 0;
     text-align: center;
@@ -18,9 +17,8 @@ body {
 /* NAVBAR */
 .navbar {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    background: rgba(0, 0, 0, 0.8);
+    justify-content: space-around;
+    background: black;
     padding: 15px;
 }
 
@@ -30,74 +28,42 @@ body {
     font-weight: bold;
 }
 
-.navbar a:hover {
-    color: #4CAF50;
-}
-
-/* SECTIONS */
-section {
-    padding: 30px;
-}
-
-/* CARDS */
-.card {
-    background: rgba(0,0,0,0.7);
-    margin: 15px;
+/* TWO COLUMNS */
+.columns {
+    display: flex;
+    gap: 20px;
     padding: 20px;
+}
+
+.column {
+    flex: 1;
+    background: rgba(0,0,0,0.6);
+    padding: 15px;
     border-radius: 10px;
-    display: inline-block;
-    width: 250px;
-    transition: transform 0.3s;
 }
 
-.card:hover {
-    transform: scale(1.05);
-}
-
-/* GALLERY */
-.gallery img {
+/* IMAGES */
+.container img {
+    width: 150px;
     margin: 10px;
     border-radius: 10px;
-    width: 200px;
-    transition: 0.3s;
-}
-
-.gallery img:hover {
-    transform: scale(1.1);
 }
 
 /* TABLE */
 table {
+    width: 90%;
     margin: 20px auto;
-    background: rgba(0,0,0,0.7);
-    border-radius: 10px;
-    padding: 10px;
+    border-collapse: collapse;
 }
 
 th, td {
+    border: 1px solid white;
     padding: 10px;
 }
 
-/* BUTTON */
-button {
-    background: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 15px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background: #2e7d32;
-}
-
-/* FOOTER */
 footer {
-    background: rgba(0,0,0,0.8);
-    padding: 15px;
-    margin-top: 20px;
+    background: black;
+    padding: 10px;
 }
 </style>
 
@@ -105,104 +71,111 @@ footer {
 
 <body>
 
-<!-- NAVBAR -->
+<!-- NAVBAR (5 menus) -->
 <div class="navbar">
-    <a href="#about">About</a>
-    <a href="#dishes">Dishes</a>
-    <a href="#gallery">Gallery</a>
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">Gallery</a>
+    <a href="#">Videos</a>
+    <a href="#">Contact</a>
 </div>
 
-<!-- HEADER -->
-<h1>🍲 Welcome to Congolese Cuisine</h1>
-<p>Discover the rich flavors of traditional food from Congo</p>
+<h1>🍲 Congolese Cuisine</h1>
 
-<!-- ABOUT -->
-<section id="about">
-    <h2>About Congolese Food</h2>
-    <p>
-        Congolese cuisine is rich in culture and flavor. It includes ingredients like cassava, plantains, rice, fish, and meat.
-        Meals are often shared with family and represent tradition and community.
-    </p>
-</section>
+<!-- FORMATTED PARAGRAPHS -->
+<p><b>Bold text: Congolese food is amazing.</b></p>
+<p><i>Italic text: Full of tradition and flavor.</i></p>
+<p><u>Underlined: Very popular in Africa.</u></p>
+<p>Water formula: H<sub>2</sub>O and date: 20<sup>26</sup></p>
+<p><mark>Highlighted: Food brings people together</mark></p>
 
-<!-- DISHES -->
-<section id="dishes">
-    <h2>Popular Dishes</h2>
+<blockquote>“Where there is food, there is love.”</blockquote>
 
-    <div class="card">
-        <h3>Fufu</h3>
-        <p>A staple food made from cassava flour.</p>
+<!-- TWO COLUMNS -->
+<div class="columns">
+    <div class="column">
+        <h2>Main Dishes</h2>
+        <ul>
+            <li>Pondu</li>
+            <li>Fufu</li>
+            <li>Moambe</li>
+        </ul>
     </div>
 
-    <div class="card">
-        <h3>Pondu</h3>
-        <p>Cassava leaves cooked with palm oil.</p>
+    <div class="column">
+        <h2>Other Foods</h2>
+        <ul>
+            <li>Plantain</li>
+            <li>Fish</li>
+            <li>Rice</li>
+        </ul>
     </div>
+</div>
 
-    <div class="card">
-        <h3>Poulet Moambe</h3>
-        <p>Chicken in a rich palm butter sauce.</p>
-    </div>
+<!-- NESTED LIST -->
+<h2>Food Categories</h2>
+<ul>
+    <li>Main Dish
+        <ul>
+            <li>Pondu</li>
+            <li>Fufu</li>
+        </ul>
+    </li>
+    <li>Dessert
+        <ul>
+            <li>Cake</li>
+            <li>Ice cream</li>
+        </ul>
+    </li>
+</ul>
 
-    <button onclick="showMessage()">Learn More</button>
-</section>
+<!-- 5 IMAGE CONTAINERS -->
+<h2>Gallery</h2>
+<div class="container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Fufu.jpg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Moambe.jpg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Liboke.jpg">
+    <img src="https://cdn.tasteatlas.com/images/dishes/3378caff26be48df9704efd6b9911499.jpg">
+    <img src="https://i.pinimg.com/originals/46/4c/f4/464cf41e1ded470dcb684d2d73df3c8a.jpg">
+</div>
 
-<!-- GALLERY -->
-<section id="gallery">
-    <h2>Food Gallery</h2>
-    <div class="gallery">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Fufu.jpg">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Moambe.jpg">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Liboke.jpg">
-    </div>
-</section>
+<!-- 5 VIDEOS -->
+<h2>Videos</h2>
 
-<!-- TABLE -->
-<section>
-    <h2>Menu</h2>
-    <table>
-        <tr>
-            <th>Dish</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>Fufu</td>
-            <td>Made from cassava flour, served with sauce.</td>
-        </tr>
-        <tr>
-            <td>Pondu</td>
-            <td>Cassava leaves stew.</td>
-        </tr>
-        <tr>
-            <td>Moambe</td>
-            <td>Chicken in palm butter sauce.</td>
-        </tr>
-    </table>
-</section>
+<iframe width="300" height="200" src="https://www.youtube.com/embed/8vWhwYW4IWE"></iframe>
+<iframe width="300" height="200" src="https://www.youtube.com/embed/8vWhwYW4IWE"></iframe>
+<iframe width="300" height="200" src="https://www.youtube.com/embed/8vWhwYW4IWE"></iframe>
+<iframe width="300" height="200" src="https://www.youtube.com/embed/8vWhwYW4IWE"></iframe>
+<iframe width="300" height="200" src="https://www.youtube.com/embed/8vWhwYW4IWE"></iframe>
 
-<!-- LIST -->
-<section>
-    <h2>Food Categories</h2>
-    <ul>
-        <li>Main Dish</li>
-        <li>Side Dish</li>
-        <li>Snack</li>
-        <li>Dessert</li>
-        <li>Drink</li>
-    </ul>
-</section>
+<!-- TABLE 1 -->
+<h2>Menu Table</h2>
+<table>
+<tr>
+<th>Dish</th><th>Price</th>
+</tr>
+<tr><td>Pondu</td><td>1500</td></tr>
+<tr><td>Fufu</td><td>1000</td></tr>
+<tr><td>Chicken</td><td>3000</td></tr>
+</table>
 
-<!-- FOOTER -->
+<!-- TABLE 2 -->
+<h2>Food Details</h2>
+<table>
+<tr>
+<th>Dish</th><th>Ingredient</th><th>Origin</th>
+</tr>
+<tr><td>Pondu</td><td>Cassava Leaves</td><td>Congo</td></tr>
+<tr><td>Moambe</td><td>Palm Sauce</td><td>Congo</td></tr>
+<tr><td>Fufu</td><td>Cassava</td><td>Africa</td></tr>
+</table>
+
+<!-- INLINE CSS EXAMPLE -->
+<p style="color: yellow;">This is inline CSS example</p>
+
 <footer>
-    <p>&copy; 2026 Congolese Cuisine Project</p>
+<p>© 2026 Congolese Food Project</p>
 </footer>
-
-<!-- SCRIPT -->
-<script>
-function showMessage() {
-    alert("Congolese cuisine is delicious, rich, and full of tradition!");
-}
-</script>
 
 </body>
 </html>
