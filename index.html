@@ -1,47 +1,153 @@
-?php
-// Database configuration
-$host = 'localhost';
-$dbname = 'example_db';
-$username = 'your_username';
-$password = 'your_password';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Congolese Food</title>
 
-// Create connection
-$conn = new mysqli($host, $username, $password, $dbname);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-echo "Connected successfully";
-
-// Create table if not exists
-$sql = "CREATE TABLE IF NOT EXISTS users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    first_name VARCHAR(50),
-    last_name VARCHAR(50),
-    email VARCHAR(100),
-    password VARCHAR(255)
-)";
-$conn->query($sql);
-
-// Insert data
-function insertUser($conn, $firstName, $lastName, $email, $password) {
-    $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
-    $sql = "INSERT INTO users (first_name, last_name, email, password) VALUES (?, ?, ?, ?)";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ssss", $firstName, $lastName, $email, $hashedPassword);
-    $stmt->execute();
-    $stmt->close();
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
 }
 
-// Get data
-function getUser($conn, $email) {
-    $sql = "SELECT first_name, last_name, email, password FROM users WHERE email = ?";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("s", $email);
-    $stmt->execute();
-    $result = $stmt->get_result();
-    $user = $result->fetch_assoc();
-    $stmt->close();
-    return $user;
+header {
+    background: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 30px;
 }
+
+nav {
+    background: #222;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #4caf50;
+}
+
+section {
+    padding: 30px;
+}
+
+h2 {
+    color: #2e7d32;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.gallery img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+button {
+    background: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #1b5e20;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>🍲 Congolese Food</h1>
+    <p>Discover the rich taste of Congo</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#dishes">Dishes</a>
+    <a href="#gallery">Gallery</a>
+</nav>
+
+<section id="about">
+    <h2>About Congolese Cuisine</h2>
+    <p>
+        Congolese cuisine is full of flavor and culture. It is based on traditional ingredients like cassava, plantains, rice, fish, and meat.
+        Meals are often shared with family and are an important part of daily life.
+    </p>
+</section>
+
+<section id="dishes">
+    <h2>Popular Dishes</h2>
+
+    <div class="card">
+        <h3>Fufu</h3>
+        <p>A staple food made from cassava flour, usually served with soup or sauce.</p>
+    </div>
+
+    <div class="card">
+        <h3>Poulet Moambe</h3>
+        <p>Chicken cooked in a rich palm butter sauce, one of the most famous dishes.</p>
+    </div>
+
+    <div class="card">
+        <h3>Liboke</h3>
+        <p>Fish or meat wrapped in banana leaves and steamed with spices.</p>
+    </div>
+
+    <button onclick="showMessage()">Click to learn more</button>
+</section>
+
+<section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Fufu.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Moambe.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Liboke.jpg">
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Congolese Food Project</p>
+</footer>
+
+<script>
+function showMessage() {
+    alert("Congolese food is delicious and full of tradition!");
+}
+</script>
+
+</body>
+</html>
