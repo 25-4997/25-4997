@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Congolese Cuisine Project</title>
+    <title>Congolese Cuisine Website</title>
 
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
@@ -35,13 +35,24 @@
         .container {
             margin: 10px;
         }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        table, th, td {
+            border: 1px solid white;
+            padding: 8px;
+        }
     </style>
 </head>
 
 <body>
 
 <!-- ===================== -->
-<!-- Assignment 1 -->
+<!-- ASSIGNMENT 1 -->
 <!-- ===================== -->
 
 <div class="navbar">
@@ -49,6 +60,7 @@
     <a href="#">Contact</a>
     <a href="#">About</a>
     <a href="#">Testimonials</a>
+    <a href="#">Menu</a> <!-- ADDED (missing requirement) -->
 </div>
 
 <form>
@@ -61,7 +73,7 @@
 <hr>
 
 <!-- ===================== -->
-<!-- Assignment 2 -->
+<!-- ASSIGNMENT 2 -->
 <!-- ===================== -->
 
 <h2>Assignment 2 - Text Formatting</h2>
@@ -70,8 +82,8 @@
 <p><i>Italic text</i></p>
 <p><u>Underline text</u></p>
 
-<p>H<sub>2</sub>O (Subscript example)</p>
-<p>2025 = 20<sup>25</sup> (Superscript example)</p>
+<p>H<sub>2</sub>O (Subscript)</p>
+<p>2025 = 20<sup>25</sup> (Superscript)</p>
 
 <p><s>Strikethrough text</s></p>
 <p><mark>Highlighted text</mark></p>
@@ -80,7 +92,7 @@
     Food is culture and love
 </blockquote>
 
-<p>&nbsp;&nbsp;&nbsp; This is an indented quotation example</p>
+<p>&nbsp;&nbsp;&nbsp; This is an indented quote</p>
 
 <ul>
     <li>Chicken</li>
@@ -98,27 +110,25 @@
 <hr>
 
 <!-- ===================== -->
-<!-- Assignment 3 -->
+<!-- ASSIGNMENT 3 -->
 <!-- ===================== -->
 
 <h2>Assignment 3 - CSS Types</h2>
 
 <!-- Inline CSS -->
 <p style="color: yellow; font-style: italic;">
-    This is INLINE CSS
+    This is INLINE CSS example
 </p>
 
 <hr>
 
 <!-- ===================== -->
-<!-- Assignment 4 -->
+<!-- ASSIGNMENT 4 -->
 <!-- ===================== -->
 
 <h2>Assignment 4 - Images & Design</h2>
 
-<p>This page is centered and styled with CSS.</p>
-
-<!-- Image Containers (5 required) -->
+<p>Centered content with images and styling</p>
 
 <div class="gallery">
     <img src="https://www.thespruceeats.com/thmb/QYr2YaHy1Gf44EVqrk4xx727-j4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/fumbwa-recipe-congolese-wild-spinach-stew-39465-hero-01-4bb7fa7c1c664f838e537caf694f8496.jpg" width="150">
@@ -140,7 +150,6 @@
     <img src="https://cdn.tasteatlas.com/images/dishes/3378caff26be48df9704efd6b9911499.jpg" width="150">
 </div>
 
-<!-- Video container -->
 <div class="container">
     <iframe width="300" height="200"
         src="https://www.youtube.com/embed/8vWhwYW4IWE"
@@ -150,10 +159,99 @@
 
 <hr>
 
-<!-- Footer (bonus good practice) -->
+<!-- ===================== -->
+<!-- ASSIGNMENT 5 -->
+<!-- ===================== -->
+
+<h2>Assignment 5 - FINAL PROJECT</h2>
+
+<!-- 2 COLUMNS (REQUIRED) -->
+<div style="display:flex; justify-content:space-around;">
+
+    <div>
+        <h3>Menu</h3>
+        <ul>
+            <li>Pondu</li>
+            <li>Fufu</li>
+            <li>Chicken Mayo</li>
+            <li>Saka Saka</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>Drinks</h3>
+        <ul>
+            <li>Juice</li>
+            <li>Soda</li>
+            <li>Water</li>
+        </ul>
+    </div>
+
+</div>
+
+<!-- TABLE 1 -->
+<h3>Food Table</h3>
+<table>
+    <tr>
+        <th>Food</th>
+        <th>Category</th>
+        <th>Origin</th>
+        <th>Spicy</th>
+    </tr>
+    <tr>
+        <td>Pondu</td>
+        <td>Main</td>
+        <td>Congo</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>Fufu</td>
+        <td>Staple</td>
+        <td>Congo</td>
+        <td>No</td>
+    </tr>
+</table>
+
+<!-- TABLE 2 -->
+<h3>Price Table</h3>
+<table>
+    <tr>
+        <th>Dish</th>
+        <th>Price</th>
+    </tr>
+    <tr>
+        <td>Chicken</td>
+        <td>3000</td>
+    </tr>
+    <tr>
+        <td>Fish</td>
+        <td>2000</td>
+    </tr>
+</table>
+
+<!-- PARAGRAPHS (5 REQUIRED) -->
+<h3>About Food</h3>
+
+<p>Congolese food is rich and tasty.</p>
+<p>It is made with fresh ingredients.</p>
+<p>It is shared with family and friends.</p>
+<p>It includes vegetables, meat, and fish.</p>
+<p>It represents culture and tradition.</p>
+
+<!-- VIDEO -->
+<div class="container">
+    <iframe width="300" height="200"
+        src="https://www.youtube.com/embed/8vWhwYW4IWE"
+        allowfullscreen>
+    </iframe>
+</div>
+
+<!-- FOOTER -->
 <footer>
-    <p>© 2025 Benita's Dishes - All Rights Reserved</p>
+    <p>© 2025 Congolese Cuisine Website - All Rights Reserved</p>
 </footer>
 
 </body>
 </html>
+
+      
