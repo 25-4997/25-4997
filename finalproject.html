@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gloria's Bag Store</title>
+
+<style>
+ body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+
+            /* Background Image */
+            background-image: url('https://i.pinimg.com/webp/1200x/48/83/9f/48839ff3ecdb63a23a14ad1d153a2010.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+/* BODY */
+  
+body{
+font-family: 'Segoe UI', sans-serif;
+background: linear-gradient(to right, #ff9a9e, #fad0c4);
+margin:0;
+}
+
+/* CONTAINER */
+.container{
+width:90%;
+margin:auto;
+}
+
+/* HEADER */
+#main-header{
+background: rgba(255,102,178,0.9);
+color:white;
+padding:25px;
+text-align:center;
+border-bottom:4px solid #ff1493;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* SEARCH */
+.search-box input{
+padding:10px;
+width:250px;
+border-radius:5px;
+border:none;
+}
+
+.search-box button{
+padding:10px;
+background:#ff1493;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* NAVIGATION */
+#menu-bar{
+background:#ff66b2;
+padding:12px;
+text-align:center;
+}
+
+#menu-bar a{
+margin:15px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+transition:0.3s;
+}
+
+#menu-bar a:hover{
+background:white;
+color:#ff1493;
+padding:6px 10px;
+border-radius:5px;
+}
+
+/* SECTION */
+.section{
+background:rgba(255,255,255,0.95);
+padding:25px;
+margin-top:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* HEADINGS */
+h2{color:#ff1493;}
+h3{color:#c71585;}
+
+/* PARAGRAPHS */
+p{
+line-height:1.6;
+color:#333;
+}
+
+/* 2 COLUMNS */
+.row{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.column{
+flex:1;
+min-width:250px;
+}
+<style>
+.list-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+   color: #000000;
+}
+
+.list-container ul {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    list-style-type: square;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+ color: #222222
+ 
+}
+  /* Container for the list */
+        .list-container {
+            display: flex;       /* makes columns */
+            gap: 40px;           /* space between columns */
+        }
+
+        /* Column styles */
+        .list-column {
+            flex: 1;             /* equal width columns */
+        }
+
+        /* Ordered list styling */
+        ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+            color: #000000;      /* black text for the list items */
+        }
+
+        /* Nested list styling */
+        ul {
+            list-style-type: lower-alpha;
+            padding-left: 20px;
+            color: #222222;      /* slightly different color for nested items */
+        }
+
+        li {
+            margin-bottom: 10px;
+          list-style-type: decimal;
+            padding-left: 20px;
+            color: #000000;
+        }
+
+/* GALLERY */
+.gallery-row{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.img-box{
+width:200px;
+background:white;
+padding:10px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.img-box:hover{
+transform:scale(1.05);
+}
+
+.img-box img{
+width:100%;
+border-radius:8px;
+}
+
+/* VIDEOS */
+.video-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.video-box{
+background:white;
+padding:10px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* TABLE */
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+}
+
+table,th,td{
+border:1px solid #ff1493;
+}
+
+th{
+background:#ff66b2;
+color:white;
+}
+
+td{
+padding:8px;
+}
+  table {
+            width: 100%;                /* full-width table */
+            border-collapse: collapse;  /* remove double borders */
+            background: #fff;           /* table background white */
+        }
+
+        th, td {
+            border: 1px solid #ccc;    /* light gray border */
+            padding: 12px 15px;        /* spacing inside cells */
+            text-align: left;
+            color: #000;               /* black text */
+        }
+
+        th {
+            background-color: #ffb6c1; /* pink header */
+        }
+
+        tr:nth-child(even) {
+            background-color: #ffe6f2; /* zebra stripes */
+        }
+
+/* FOOTER */
+#main-footer{
+background:#ff1493;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- HEADER -->
+<header id="main-header">
+<h1>Elda's Bag Store</h1>
+
+<div class="search-box">
+<input type="text" placeholder="Search for bags">
+<button>Search</button>
+</div>
+</header>
+
+<!-- NAVIGATION -->
+<nav id="menu-bar">
+<a href="https://25-5003.github.io/elda-s-bag/index.html">Home</a>
+<a href="https://25-5003.github.io/elda-s-bag/about.html">About</a>
+<a href="https://25-5003.github.io/elda-s-bag/gallery.html">Gallery</a>
+<a href="https://25-5003.github.io/elda-s-bag/contact.html">Contact</a>
+<a href="https://25-5003.github.io/elda-s-bag/shop.html">Reviews</a>
+</nav>
+
+<!-- ABOUT -->
+<div class="section">
+<h2>About Our Bags</h2>
+
+<p style="font-weight:bold;">Shopping bags are more than just practical carriers.</p>
+<p><i>Plastic bags are lightweight but harmful to the environment.</i></p>
+<p style="color:#ff66b2;">Paper bags are eco-friendly.</p>
+<p><mark>Reusable bags are sustainable and stylish.</mark></p>
+<p>They are also powerful branding tools.</p>
+</div>
+
+<!-- 2 COLUMNS -->
+<div class="section">
+<div class="row">
+
+<div class="column">
+<h3>Popular Bags</h3>
+<ol>
+<li>Handbags</li>
+<li>Backpacks</li>
+<li>Travel Bags</li>
+<li>School Bags</li>
+<li>Fashion Bags</li>
+</ol>
+</div>
+
+<div class="column">
+<h3>Features</h3>
+<ul>
+<li>Strong Material</li>
+<li>Comfortable</li>
+<li>Storage
+<ul>
+<li>Main</li>
+<li>Pockets</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="column">
+  <h3>Bag Categories</h3>
+
+
+
+<ul>
+    <li>Handbags</li>
+    <li>Backpacks</li>
+    <li>School Bags</li>
+</ul>
+
+<ul>
+    <li>Travel Bags
+        <ul>
+            <li>Suitcase</li>
+            <li>Duffel Bag</li>
+        </ul>
+    </li>
+    <li>Luxury Bags</li>
+</ul>
+
+
+</div>
+</div>
+
+<!-- GALLERY -->
+<div class="section">
+<h2>Gallery</h2>
+
+<div class="gallery-row">
+
+<div class="img-box">
+<img src="https://i.pinimg.com/736x/8f/40/31/8f40315afa364c8a00ee567072517fab.jpg">
+<p>Leather Bag</p>
+</div>
+
+<div class="img-box">
+<img src="https://i.pinimg.com/1200x/e3/78/ac/e378acf01650f70d6f476f0ef8bd9fe7.jpg" width="300" height="200">
+<p>Luxury Bag</p>
+</div>
+
+<div class="img-box">
+<img src="https://i.pinimg.com/736x/ae/a8/cc/aea8cca78df421307d9c349f60f3e96d.jpg"  width="300" height="200">
+<p>Backpack</p>
+</div>
+
+<div class="img-box">
+<img src="https://i.pinimg.com/736x/4e/63/c0/4e63c0ebe20581cd50b3c4e21c998d8f.jpg" width="300" height="200">
+<p>Travel Bag</p>
+</div>
+
+<div class="img-box">
+<img src="https://i.pinimg.com/736x/92/49/5b/92495be58b5544602f77f7df5f292902.jpg" width="300" height="200">
+<p>Mini Bag</p>
+</div>
+
+</div>
+</div>
+
+<!-- VIDEOS -->
+<div class="section">
+<h2>Videos</h2>
+
+<div class="video-container">
+
+<div class="video-box">
+<iframe src="https://www.youtube.com/embed/2Vv-BfVoq4g"></iframe>
+</div>
+
+<div class="video-box">
+<iframe src="https://www.youtube.com/embed/jNQXAC9IVRw"></iframe>
+</div>
+
+<div class="video-box">
+<iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+</div>
+
+</div>
+</div>
+
+<!-- TABLE -->
+<div class="section">
+ <h2>Our Bag Collection</h2>
+
+    <table>
+        <tr>
+            <th>Bag No.</th>
+            <th>Bag Name</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Price(ksh)</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Classic Backpack</td>
+            <td>Backpack</td>
+            <td>Spacious leather backpack for everyday use</td>
+            <td>5000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>City Tote</td>
+            <td>Tote</td>
+            <td>Stylish tote bag for work and shopping</td>
+            <td>3400</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Travel Duffel</td>
+            <td>Duffel</td>
+            <td>Durable bag perfect for weekend trips</td>
+            <td>7000</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Evening Clutch</td>
+            <td>Clutch</td>
+            <td>Elegant clutch for special occasions</td>
+            <td>3500</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Sporty Sling</td>
+            <td>Sling Bag</td>
+            <td>Lightweight and comfortable for sports activities</td>
+            <td>3000</td>
+        </tr>
+    </table>
+</div>
+
+<!-- FOOTER -->
+<footer id="main-footer">
+<p>© 2026 Gloria's Bag Store</p>
+<p>Designed by Gloria kat</p>
+</footer>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
