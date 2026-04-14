@@ -1,180 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Congolese Food Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congolese Cuisine Project</title>
 
-<!-- INTERNAL CSS -->
-<style>
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #1b5e20, #4caf50);
-    color: white;
-    margin: 0;
-    text-align: center;
-}
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
 
-/* NAVBAR */
-.navbar {
-    display: flex;
-    justify-content: space-around;
-    background: black;
-    padding: 15px;
-}
+    <!-- Internal CSS -->
+    <style>
+        body {
+            text-align: center;
+            background-color: darkgreen;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
 
-.navbar a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
+        .navbar a {
+            margin: 10px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-/* TWO COLUMNS */
-.columns {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-}
+        .gallery {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
 
-.column {
-    flex: 1;
-    background: rgba(0,0,0,0.6);
-    padding: 15px;
-    border-radius: 10px;
-}
-
-/* IMAGES */
-.container img {
-    width: 150px;
-    margin: 10px;
-    border-radius: 10px;
-}
-
-/* TABLE */
-table {
-    width: 90%;
-    margin: 20px auto;
-    border-collapse: collapse;
-}
-
-th, td {
-    border: 1px solid white;
-    padding: 10px;
-}
-
-footer {
-    background: black;
-    padding: 10px;
-}
-</style>
-
+        .container {
+            margin: 10px;
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- NAVBAR (5 menus) -->
+<!-- ===================== -->
+<!-- Assignment 1 -->
+<!-- ===================== -->
+
 <div class="navbar">
     <a href="#">Home</a>
-    <a href="#">Menu</a>
-    <a href="#">Gallery</a>
-    <a href="#">Videos</a>
     <a href="#">Contact</a>
+    <a href="#">About</a>
+    <a href="#">Testimonials</a>
 </div>
 
-<h1>🍲 Congolese Cuisine</h1>
+<form>
+    <input type="search" placeholder="Search dish">
+</form>
 
-<!-- FORMATTED PARAGRAPHS -->
-<p><b>Bold text: Congolese food is amazing.</b></p>
-<p><i>Italic text: Full of tradition and flavor.</i></p>
-<p><u>Underlined: Very popular in Africa.</u></p>
-<p>Water formula: H<sub>2</sub>O and date: 20<sup>26</sup></p>
-<p><mark>Highlighted: Food brings people together</mark></p>
+<h1>Welcome to Congolese Cuisine</h1>
+<p>This is the homepage of Congolese food website.</p>
 
-<blockquote>“Where there is food, there is love.”</blockquote>
+<hr>
 
-<!-- TWO COLUMNS -->
-<div class="columns">
-    <div class="column">
-        <h2>Main Dishes</h2>
-        <ul>
-            <li>Pondu</li>
-            <li>Fufu</li>
-            <li>Moambe</li>
-        </ul>
-    </div>
+<!-- ===================== -->
+<!-- Assignment 2 -->
+<!-- ===================== -->
 
-    <div class="column">
-        <h2>Other Foods</h2>
-        <ul>
-            <li>Plantain</li>
-            <li>Fish</li>
-            <li>Rice</li>
-        </ul>
-    </div>
-</div>
+<h2>Assignment 2 - Text Formatting</h2>
 
-<!-- NESTED LIST -->
-<h2>Food Categories</h2>
+<p><b>Bold text</b></p>
+<p><i>Italic text</i></p>
+<p><u>Underline text</u></p>
+
+<p>H<sub>2</sub>O (Subscript example)</p>
+<p>2025 = 20<sup>25</sup> (Superscript example)</p>
+
+<p><s>Strikethrough text</s></p>
+<p><mark>Highlighted text</mark></p>
+
+<blockquote>
+    Food is culture and love
+</blockquote>
+
+<p>&nbsp;&nbsp;&nbsp; This is an indented quotation example</p>
+
 <ul>
-    <li>Main Dish
-        <ul>
-            <li>Pondu</li>
-            <li>Fufu</li>
-        </ul>
-    </li>
-    <li>Dessert
-        <ul>
-            <li>Cake</li>
-            <li>Ice cream</li>
-        </ul>
-    </li>
+    <li>Chicken</li>
+    <li>Fufu</li>
+    <li>Pondu</li>
 </ul>
 
-<!-- 5 IMAGE CONTAINERS -->
-<h2>Gallery</h2>
-<div class="container">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Fufu.jpg">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Moambe.jpg">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Liboke.jpg">
-    <img src="https://cdn.tasteatlas.com/images/dishes/3378caff26be48df9704efd6b9911499.jpg">
-    <img src="https://i.pinimg.com/originals/46/4c/f4/464cf41e1ded470dcb684d2d73df3c8a.jpg">
+<ol>
+    <li>Choose food</li>
+    <li>Add to cart</li>
+    <li>Pay</li>
+    <li>Delivery</li>
+</ol>
+
+<hr>
+
+<!-- ===================== -->
+<!-- Assignment 3 -->
+<!-- ===================== -->
+
+<h2>Assignment 3 - CSS Types</h2>
+
+<!-- Inline CSS -->
+<p style="color: yellow; font-style: italic;">
+    This is INLINE CSS
+</p>
+
+<hr>
+
+<!-- ===================== -->
+<!-- Assignment 4 -->
+<!-- ===================== -->
+
+<h2>Assignment 4 - Images & Design</h2>
+
+<p>This page is centered and styled with CSS.</p>
+
+<!-- Image Containers (5 required) -->
+
+<div class="gallery">
+    <img src="https://www.thespruceeats.com/thmb/QYr2YaHy1Gf44EVqrk4xx727-j4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/fumbwa-recipe-congolese-wild-spinach-stew-39465-hero-01-4bb7fa7c1c664f838e537caf694f8496.jpg" width="150">
 </div>
 
-<!-- 5 VIDEOS -->
-<h2>Videos</h2>
+<div class="gallery">
+    <img src="https://i.ytimg.com/vi/6V5XjQTjB-w/maxresdefault.jpg" width="150">
+</div>
 
-<iframe width="300" height="200" src="https://www.youtube.com/embed/8vWhwYW4IWE"></iframe>
-<iframe width="300" height="200" src="https://www.youtube.com/embed/8vWhwYW4IWE"></iframe>
-<iframe width="300" height="200" src="https://www.youtube.com/embed/8vWhwYW4IWE"></iframe>
-<iframe width="300" height="200" src="https://www.youtube.com/embed/8vWhwYW4IWE"></iframe>
-<iframe width="300" height="200" src="https://www.youtube.com/embed/8vWhwYW4IWE"></iframe>
+<div class="gallery">
+    <img src="https://i.pinimg.com/originals/46/4c/f4/464cf41e1ded470dcb684d2d73df3c8a.jpg" width="150">
+</div>
 
-<!-- TABLE 1 -->
-<h2>Menu Table</h2>
-<table>
-<tr>
-<th>Dish</th><th>Price</th>
-</tr>
-<tr><td>Pondu</td><td>1500</td></tr>
-<tr><td>Fufu</td><td>1000</td></tr>
-<tr><td>Chicken</td><td>3000</td></tr>
-</table>
+<div class="gallery">
+    <img src="https://schulprojekt-uganda.de/wp-content/uploads/2017/08/mixed-plate.jpg" width="150">
+</div>
 
-<!-- TABLE 2 -->
-<h2>Food Details</h2>
-<table>
-<tr>
-<th>Dish</th><th>Ingredient</th><th>Origin</th>
-</tr>
-<tr><td>Pondu</td><td>Cassava Leaves</td><td>Congo</td></tr>
-<tr><td>Moambe</td><td>Palm Sauce</td><td>Congo</td></tr>
-<tr><td>Fufu</td><td>Cassava</td><td>Africa</td></tr>
-</table>
+<div class="gallery">
+    <img src="https://cdn.tasteatlas.com/images/dishes/3378caff26be48df9704efd6b9911499.jpg" width="150">
+</div>
 
-<!-- INLINE CSS EXAMPLE -->
-<p style="color: yellow;">This is inline CSS example</p>
+<!-- Video container -->
+<div class="container">
+    <iframe width="300" height="200"
+        src="https://www.youtube.com/embed/8vWhwYW4IWE"
+        allowfullscreen>
+    </iframe>
+</div>
 
+<hr>
+
+<!-- Footer (bonus good practice) -->
 <footer>
-<p>© 2026 Congolese Food Project</p>
+    <p>© 2025 Benita's Dishes - All Rights Reserved</p>
 </footer>
 
 </body>
