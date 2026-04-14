@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Elda's Bag Store</title>
+
+<style>
+
+/* BODY */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://i.pinimg.com/736x/4b/f0/17/4bf0177312b71a4986ff2551710554a0.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* CONTAINER */
+.container{
+    width:90%;
+    margin:auto;
+}
+
+/* HEADER */
+#main-header{
+    background:#ff66b2;
+    color:white;
+    padding:20px;
+    text-align:center;
+    border-bottom:4px solid #ff1493;
+}
+
+/* SEARCH */
+.search-box input{
+    padding:8px;
+    width:200px;
+}
+
+.search-box button{
+    padding:8px;
+    background:#ff1493;
+    color:white;
+    border:none;
+}
+
+/* NAVIGATION */
+#menu-bar{
+    background:#ff99cc;
+    padding:10px;
+    text-align:center;
+}
+
+#menu-bar a{
+    margin:15px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+#menu-bar a:hover{
+    background:white;
+    color:#ff1493;
+    padding:5px;
+    border-radius:5px;
+}
+
+/* SECTION */
+.section{
+    background:white;
+    padding:20px;
+    margin-top:15px;
+    color:black; /* FIXED */
+}
+
+/* HEADINGS */
+h1{color:white;}
+h2{color:#ff1493;}
+h3{color:#c71585;}
+h4{color:#d6336c;}
+
+/* TEXT */
+p{
+    font-size:16px;
+    line-height:1.6;
+}
+
+/* LIST FIX */
+ol, ul, li, dl, dt, dd{
+    color:black;
+}
+
+/* 2 COLUMN LAYOUT */
+.row{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.column{
+    flex:50%;
+    padding:10px;
+}
+
+/* IMAGES */
+img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-row{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.img-box{
+    width:200px;
+    text-align:center;
+    background:white;
+    padding:10px;
+    border-radius:10px;
+}
+
+.img-box img{
+    border-radius:10px;
+}
+
+/* VIDEOS */
+.video-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+iframe{
+    width:250px;
+    height:150px;
+}
+
+/* TABLE */
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+    background:white;
+    color:black; /* FIXED */
+}
+
+table,th,td{
+    border:1px solid #ff1493;
+}
+
+th,td{
+    padding:8px;
+    text-align:center;
+}
+
+/* FOOTER */
+#main-footer{
+    background:#ff66b2;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- NAVIGATION -->
+<nav id="menu-bar">
+<a href="https://25-5003.github.io/elda-s-bag/index.html">Home</a>
+<a href="https://25-5003.github.io/elda-s-bag/about.html">About us</a>
+<a href="https://25-5003.github.io/elda-s-bag/shop.html">Testimony</a>
+<a href="https://25-5003.github.io/elda-s-bag/contact.html">Contact</a>
+<a href="https://25-5003.github.io/elda-s-bag/gallery.html">Rating</a>
+</nav>
+
+<!-- HEADER -->
+<header id="main-header">
+<h1>Elda's Bag Store</h1>
+
+<div class="search-box">
+<input type="text" placeholder="Search for bags">
+<button>Search</button>
+</div>
+</header>
+
+<!-- ABOUT -->
+<div class="section">
+<h2>About Our Bags</h2>
+
+<p><b>Shopping bags are more than just practical carriers; they are an essential part of modern consumer culture.</b></p>
+<p><i>Plastic shopping bags are lightweight and inexpensive.</i></p>
+<p style="color:pink;">Paper bags are biodegradable and eco-friendly.</p>
+<p><mark>Reusable fabric bags are sustainable and stylish.</mark></p>
+
+</div>
+
+<!-- LIST SECTION -->
+<div class="section">
+<div class="row">
+
+<div class="column">
+<h3>Popular Types of Bags</h3>
+<ol>
+<li>Handbags</li>
+<li>Backpacks</li>
+<li>Travel Bags</li>
+<li>School Bags</li>
+<li>Fashion Bags</li>
+</ol>
+</div>
+
+<div class="column">
+<h3>Features of a Good Bag</h3>
+<ul>
+<li>Strong Material</li>
+<li>Comfortable Straps</li>
+<li>Storage Space
+<ul>
+<li>Main compartment</li>
+<li>Side pockets</li>
+<li>Hidden pocket</li>
+</ul>
+</li>
+<li>Fashionable Design</li>
+</ul>
+</div>
+
+<div class="column">
+<h3>Bag Terminology</h3>
+<dl>
+<dt>Handbag</dt>
+<dd>A small bag carried by hand or shoulder.</dd>
+
+<dt>Backpack</dt>
+<dd>A bag worn on the back.</dd>
+
+<dt>Travel Bag</dt>
+<dd>A large bag used during trips.</dd>
+</dl>
+</div>
+
+<div class="column">
+<h3>Why Choose Us</h3>
+<p>We combine comfort, durability, and style.</p>
+<p>Modern and elegant designs.</p>
+<p>Trusted by customers.</p>
+</div>
+
+</div>
+</div>
+
+<!-- TABLE -->
+<div class="section">
+<h4>Sales Table</h4>
+
+<table>
+<tr>
+<th>Bag</th>
+<th>Jan</th>
+<th>Feb</th>
+<th>Mar</th>
+</tr>
+
+<tr>
+<td>Handbag</td>
+<td>10</td><td>12</td><td>8</td>
+</tr>
+
+<tr>
+<td>Backpack</td>
+<td>8</td><td>10</td><td>7</td>
+</tr>
+
+<tr>
+<td>Travel Bag</td>
+<td>5</td><td>6</td><td>4</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- FOOTER -->
+<footer id="main-footer">
+<p>© 2026 Elda's Bag Store</p>
+</footer>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
