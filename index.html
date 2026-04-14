@@ -1,257 +1,291 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Congolese Cuisine Website</title>
+<title>Taste of Congo</title>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="style.css">
+<style>
 
-    <!-- Internal CSS -->
-    <style>
-        body {
-            text-align: center;
-            background-color: darkgreen;
-            color: white;
-            font-family: Arial, sans-serif;
-        }
+/* BODY */
+body{
+font-family: Arial, sans-serif;
+background:#fff3e6;
+margin:0;
+padding:0;
+}
 
-        .navbar a {
-            margin: 10px;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
+/* CONTAINER */
+.container{
+width:90%;
+margin:auto;
+}
 
-        .gallery {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px;
-            border: 2px solid white;
-            border-radius: 10px;
-        }
+/* HEADER */
+#main-header{
+background:#d35400;
+color:white;
+padding:20px;
+text-align:center;
+border-bottom:4px solid #e67e22;
+}
 
-        .container {
-            margin: 10px;
-        }
+/* NAVIGATION */
+#menu-bar{
+background:#e67e22;
+padding:10px;
+text-align:center;
+}
 
-        table {
-            margin: auto;
-            border-collapse: collapse;
-            width: 80%;
-        }
+#menu-bar a{
+margin:15px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
 
-        table, th, td {
-            border: 1px solid white;
-            padding: 8px;
-        }
-    </style>
+#menu-bar a:hover{
+background:white;
+color:#d35400;
+padding:5px;
+border-radius:5px;
+}
+
+/* SECTION */
+.section{
+background:white;
+padding:20px;
+margin-top:15px;
+border-radius:10px;
+}
+
+/* TITLES */
+h1{color:white;}
+h2{color:#d35400;}
+h3{color:#e67e22;}
+
+/* PARAGRAPHS */
+p{
+font-size:16px;
+line-height:1.6;
+color:#333;
+}
+
+/* ROW */
+.row{
+display:flex;
+flex-wrap:wrap;
+}
+
+.column{
+flex:50%;
+padding:10px;
+}
+
+/* GALLERY */
+.gallery-row{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+justify-content:center;
+}
+
+.img-box{
+width:200px;
+background:#fff;
+padding:10px;
+border-radius:10px;
+text-align:center;
+}
+
+.img-box img{
+width:100%;
+border-radius:8px;
+}
+
+/* VIDEO */
+.video-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.video-box{
+background:white;
+padding:10px;
+border-radius:10px;
+}
+
+/* TABLE */
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+table,th,td{
+border:1px solid #d35400;
+}
+
+th,td{
+padding:8px;
+text-align:center;
+}
+
+/* FOOTER */
+#main-footer{
+background:#d35400;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:20px;
+}
+
+</style>
 </head>
 
 <body>
 
-<!-- ===================== -->
-<!-- ASSIGNMENT 1 -->
-<!-- ===================== -->
+<div class="container">
 
-<div class="navbar">
-    <a href="#">Home</a>
-    <a href="#">Contact</a>
-    <a href="#">About</a>
-    <a href="#">Testimonials</a>
-    <a href="#">Menu</a> <!-- ADDED (missing requirement) -->
+<!-- MENU -->
+<nav id="menu-bar">
+<a href="#">Home</a>
+<a href="#">Dishes</a>
+<a href="#">Gallery</a>
+<a href="#">Videos</a>
+<a href="#">Contact</a>
+</nav>
+
+<!-- HEADER -->
+<header id="main-header">
+<h1>Taste of Congo 🇨🇩</h1>
+<p>Discover the richness of Congolese cuisine</p>
+</header>
+
+<!-- ABOUT -->
+<div class="section">
+<h2>About Congolese Cuisine</h2>
+
+<p>Congolese cuisine is rich, diverse, and full of traditional African flavors.</p>
+
+<p>It often includes cassava, rice, fish, meat, and local vegetables.</p>
+
+<p>The dishes are known for their delicious and flavorful sauces.</p>
 </div>
 
-<form>
-    <input type="search" placeholder="Search dish">
-</form>
+<!-- DISHES -->
+<div class="section">
 
-<h1>Welcome to Congolese Cuisine</h1>
-<p>This is the homepage of Congolese food website.</p>
+<div class="row">
 
-<hr>
-
-<!-- ===================== -->
-<!-- ASSIGNMENT 2 -->
-<!-- ===================== -->
-
-<h2>Assignment 2 - Text Formatting</h2>
-
-<p><b>Bold text</b></p>
-<p><i>Italic text</i></p>
-<p><u>Underline text</u></p>
-
-<p>H<sub>2</sub>O (Subscript)</p>
-<p>2025 = 20<sup>25</sup> (Superscript)</p>
-
-<p><s>Strikethrough text</s></p>
-<p><mark>Highlighted text</mark></p>
-
-<blockquote>
-    Food is culture and love
-</blockquote>
-
-<p>&nbsp;&nbsp;&nbsp; This is an indented quote</p>
-
-<ul>
-    <li>Chicken</li>
-    <li>Fufu</li>
-    <li>Pondu</li>
-</ul>
-
+<div class="column">
+<h3>Popular Dishes</h3>
 <ol>
-    <li>Choose food</li>
-    <li>Add to cart</li>
-    <li>Pay</li>
-    <li>Delivery</li>
+<li>Chicken Moambe</li>
+<li>Fufu</li>
+<li>Liboké</li>
+<li>Makayabu</li>
+<li>Chikwangue</li>
 </ol>
-
-<hr>
-
-<!-- ===================== -->
-<!-- ASSIGNMENT 3 -->
-<!-- ===================== -->
-
-<h2>Assignment 3 - CSS Types</h2>
-
-<!-- Inline CSS -->
-<p style="color: yellow; font-style: italic;">
-    This is INLINE CSS example
-</p>
-
-<hr>
-
-<!-- ===================== -->
-<!-- ASSIGNMENT 4 -->
-<!-- ===================== -->
-
-<h2>Assignment 4 - Images & Design</h2>
-
-<p>Centered content with images and styling</p>
-
-<div class="gallery">
-    <img src="https://www.thespruceeats.com/thmb/QYr2YaHy1Gf44EVqrk4xx727-j4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/fumbwa-recipe-congolese-wild-spinach-stew-39465-hero-01-4bb7fa7c1c664f838e537caf694f8496.jpg" width="150">
 </div>
 
-<div class="gallery">
-    <img src="https://i.ytimg.com/vi/6V5XjQTjB-w/maxresdefault.jpg" width="150">
+<div class="column">
+<h3>Main Ingredients</h3>
+<ul>
+<li>Cassava</li>
+<li>Plantain</li>
+<li>Fish</li>
+<li>Palm oil</li>
+<li>Local spices</li>
+</ul>
 </div>
 
-<div class="gallery">
-    <img src="https://i.pinimg.com/originals/46/4c/f4/464cf41e1ded470dcb684d2d73df3c8a.jpg" width="150">
+</div>
 </div>
 
-<div class="gallery">
-    <img src="https://schulprojekt-uganda.de/wp-content/uploads/2017/08/mixed-plate.jpg" width="150">
+<!-- GALLERY -->
+<div class="section">
+
+<h2>Food Gallery</h2>
+
+<div class="gallery-row">
+
+<div class="img-box">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Moambe_chicken.jpg">
+<h3>Chicken Moambe</h3>
 </div>
 
-<div class="gallery">
-    <img src="https://cdn.tasteatlas.com/images/dishes/3378caff26be48df9704efd6b9911499.jpg" width="150">
+<div class="img-box">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Fufu_and_soup.jpg">
+<h3>Fufu</h3>
 </div>
 
-<div class="container">
-    <iframe width="300" height="200"
-        src="https://www.youtube.com/embed/8vWhwYW4IWE"
-        allowfullscreen>
-    </iframe>
+<div class="img-box">
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Grilled_fish_africa.jpg">
+<h3>Grilled Fish</h3>
 </div>
 
-<hr>
-
-<!-- ===================== -->
-<!-- ASSIGNMENT 5 -->
-<!-- ===================== -->
-
-<h2>Assignment 5 - FINAL PROJECT</h2>
-
-<!-- 2 COLUMNS (REQUIRED) -->
-<div style="display:flex; justify-content:space-around;">
-
-    <div>
-        <h3>Menu</h3>
-        <ul>
-            <li>Pondu</li>
-            <li>Fufu</li>
-            <li>Chicken Mayo</li>
-            <li>Saka Saka</li>
-        </ul>
-    </div>
-
-    <div>
-        <h3>Drinks</h3>
-        <ul>
-            <li>Juice</li>
-            <li>Soda</li>
-            <li>Water</li>
-        </ul>
-    </div>
-
+</div>
 </div>
 
-<!-- TABLE 1 -->
-<h3>Food Table</h3>
+<!-- VIDEOS -->
+<div class="section">
+
+<h2>Cooking Videos</h2>
+
+<div class="video-container">
+
+<div class="video-box">
+<iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+</div>
+
+<div class="video-box">
+<iframe src="https://www.youtube.com/embed/aqz-KE-bpKQ"></iframe>
+</div>
+
+</div>
+</div>
+
+<!-- TABLE -->
+<div class="section">
+
+<h2>Food Consumption Table</h2>
+
 <table>
-    <tr>
-        <th>Food</th>
-        <th>Category</th>
-        <th>Origin</th>
-        <th>Spicy</th>
-    </tr>
-    <tr>
-        <td>Pondu</td>
-        <td>Main</td>
-        <td>Congo</td>
-        <td>No</td>
-    </tr>
-    <tr>
-        <td>Fufu</td>
-        <td>Staple</td>
-        <td>Congo</td>
-        <td>No</td>
-    </tr>
+<tr>
+<th>Dish</th>
+<th>Mon</th>
+<th>Tue</th>
+<th>Wed</th>
+<th>Thu</th>
+<th>Fri</th>
+</tr>
+
+<tr>
+<td>Chicken Moambe</td>
+<td>10</td><td>12</td><td>9</td><td>14</td><td>15</td>
+</tr>
+
+<tr>
+<td>Fufu</td>
+<td>15</td><td>18</td><td>20</td><td>17</td><td>22</td>
+</tr>
+
+<tr>
+<td>Liboké</td>
+<td>8</td><td>10</td><td>7</td><td>11</td><td>13</td>
+</tr>
+
 </table>
 
-<!-- TABLE 2 -->
-<h3>Price Table</h3>
-<table>
-    <tr>
-        <th>Dish</th>
-        <th>Price</th>
-    </tr>
-    <tr>
-        <td>Chicken</td>
-        <td>3000</td>
-    </tr>
-    <tr>
-        <td>Fish</td>
-        <td>2000</td>
-    </tr>
-</table>
-
-<!-- PARAGRAPHS (5 REQUIRED) -->
-<h3>About Food</h3>
-
-<p>Congolese food is rich and tasty.</p>
-<p>It is made with fresh ingredients.</p>
-<p>It is shared with family and friends.</p>
-<p>It includes vegetables, meat, and fish.</p>
-<p>It represents culture and tradition.</p>
-
-<!-- VIDEO -->
-<div class="container">
-    <iframe width="300" height="200"
-        src="https://www.youtube.com/embed/8vWhwYW4IWE"
-        allowfullscreen>
-    </iframe>
 </div>
 
 <!-- FOOTER -->
-<footer>
-    <p>© 2025 Congolese Cuisine Website - All Rights Reserved</p>
+<footer id="main-footer">
+<p>© 2026 Taste of Congo</p>
+<p>Website created to promote African cuisine</p>
 </footer>
+
+</div>
 
 </body>
 </html>
-
-      
